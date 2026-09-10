@@ -1,0 +1,89 @@
+/* Identidad de Tamping, en la web. Los mismos valores que los tokens de la app. */
+:root {
+  --verde: #18c878;
+  --verde-oscuro: #12372a;
+  --lima: #73e36b;
+  --crema: #f7f3e8;
+  --tinta: #161a18;
+  --apagado: #66706b;
+  --borde: #e6eae7;
+  --fondo: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--tinta);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.contenedor { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+header {
+  border-bottom: 1px solid var(--borde);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: saturate(180%) blur(12px);
+  z-index: 10;
+}
+
+header .contenedor { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+
+.marca { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--verde-oscuro); font-weight: 800; font-size: 19px; letter-spacing: -0.02em; }
+.marca img { width: 30px; height: 30px; border-radius: 8px; }
+
+nav { display: flex; gap: 20px; flex-wrap: wrap; }
+nav a { color: var(--apagado); text-decoration: none; font-size: 15px; font-weight: 500; }
+nav a:hover, nav a[aria-current="page"] { color: var(--verde-oscuro); }
+
+h1 { font-size: 40px; line-height: 1.15; letter-spacing: -0.03em; color: var(--verde-oscuro); margin: 48px 0 12px; }
+h2 { font-size: 22px; letter-spacing: -0.02em; color: var(--verde-oscuro); margin: 40px 0 10px; }
+h3 { font-size: 17px; color: var(--verde-oscuro); margin: 28px 0 6px; }
+
+p, li { color: #2b322e; }
+a { color: #0f7a4d; }
+
+.entradilla { font-size: 19px; color: var(--apagado); margin-top: 0; }
+.fecha { font-size: 14px; color: var(--apagado); margin-top: -4px; }
+
+.aviso {
+  background: var(--crema);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 28px 0;
+}
+.aviso p { margin: 0; }
+
+table { border-collapse: collapse; width: 100%; margin: 18px 0; font-size: 15px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--borde); vertical-align: top; }
+th { color: var(--verde-oscuro); font-weight: 700; }
+
+footer {
+  border-top: 1px solid var(--borde);
+  margin-top: 72px;
+  padding: 28px 0 56px;
+  font-size: 14px;
+  color: var(--apagado);
+}
+footer .contenedor { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+footer a { color: var(--apagado); }
+
+/* Portada */
+.portada { padding: 72px 0 24px; }
+.portada h1 { margin-top: 0; font-size: 52px; }
+.rasgos { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin: 44px 0; }
+.rasgo { background: var(--crema); border-radius: 16px; padding: 22px; }
+.rasgo h3 { margin-top: 0; }
+.rasgo p { margin-bottom: 0; font-size: 15px; color: var(--apagado); }
+
+@media (max-width: 600px) {
+  h1, .portada h1 { font-size: 32px; }
+  body { font-size: 16px; }
+}
