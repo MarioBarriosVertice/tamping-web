@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.tamping.mobile",
+      "sha256_cert_fingerprints": [
+        "53:51:6C:BC:0D:53:1E:6B:B4:4D:2F:83:FF:5E:92:38:37:6C:0D:68:78:75:6D:8E:3D:18:B2:76:8B:8F:C2:9D"
+      ]
+    }
+  }
+]

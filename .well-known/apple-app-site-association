@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["38V832B2AW.app.tamping.mobile"],
+        "components": [
+          { "/": "/receta/*", "comment": "Una receta compartida abre la app" },
+          { "/": "/r/*", "comment": "Lo mismo, en la forma corta" }
+        ]
+      }
+    ]
+  }
+}
